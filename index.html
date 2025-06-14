@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6794851357390069"
+     crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FF Diamond Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      margin: 0; padding: 20px;
+      color: #fff;
+    }
+    h1 {
+      text-align: center;
+      color: #00ffe0;
+      text-shadow: 2px 2px #000;
+    }
+    .pack {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    button {
+      background: #ff4081;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form {
+      display: none;
+      margin-top: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 4px;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ffe0;
+      display: none;
+      z-index: 999;
+    }
+    .popup h2 {
+      color: #00ffe0;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function showForm(id) {
+      document.querySelectorAll("form").forEach(f => f.style.display = "none");
+      document.getElementById("form-" + id).style.display = "block";
+    }
+    function submitForm(e, pack) {
+      e.preventDefault();
+      document.getElementById("popup").style.display = "block";
+      document.getElementById("popup-msg").innerText = "🎉 Congratulations!\nआपके " + pack + " डायमंड भेज दिए गए हैं।\nअपना मेलबॉक्स चेक करें!";
+      setTimeout(() => {
+        document.getElementById("popup").style.display = "none";
+      }, 5000);
+      e.target.reset();
+    }
+  </script>
+</head>
+<body>
+  <h1>💎 FF Diamond Hub 💎</h1>
+
+  <div class="pack"><h3>100 Free Diamonds</h3>
+    <button onclick="showForm('100')">Claim Now</button>
+    <form id="form-100" onsubmit="submitForm(event, '100')">
+      <input type="text" name="uid" placeholder="Free Fire User ID" required />
+      <select name="server" required>
+        <option value="">Select Server</option>
+        <option>India</option><option>Brazil</option><option>Indonesia</option>
+      </select>
+      <input type="email" name="email" placeholder="Email (optional)" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="pack"><h3>310 Free Diamonds</h3>
+    <button onclick="showForm('310')">Claim Now</button>
+    <form id="form-310" onsubmit="submitForm(event, '310')">
+      <input type="text" name="uid" placeholder="Free Fire User ID" required />
+      <select name="server" required>
+        <option value="">Select Server</option>
+        <option>India</option><option>Brazil</option><option>Indonesia</option>
+      </select>
+      <input type="email" name="email" placeholder="Email (optional)" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="pack"><h3>520 Free Diamonds</h3>
+    <button onclick="showForm('520')">Claim Now</button>
+    <form id="form-520" onsubmit="submitForm(event, '520')">
+      <input type="text" name="uid" placeholder="Free Fire User ID" required />
+      <select name="server" required>
+        <option value="">Select Server</option>
+        <option>India</option><option>Brazil</option><option>Indonesia</option>
+      </select>
+      <input type="email" name="email" placeholder="Email (optional)" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="pack"><h3>Elite Pass</h3>
+    <button onclick="showForm('elite')">Claim Now</button>
+    <form id="form-elite" onsubmit="submitForm(event, 'Elite Pass')">
+      <input type="text" name="uid" placeholder="Free Fire User ID" required />
+      <select name="server" required>
+        <option value="">Select Server</option>
+        <option>India</option><option>Brazil</option><option>Indonesia</option>
+      </select>
+      <input type="email" name="email" placeholder="Email (optional)" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="popup" class="popup">
+    <h2>🎉 Congratulations!</h2>
+    <div id="popup-msg">आपके डायमंड मेल बॉक्स में भेज दिए गए हैं!</div>
+  </div>
+</body>
+</html>
