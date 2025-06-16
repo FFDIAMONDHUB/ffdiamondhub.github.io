@@ -159,8 +159,12 @@
 <p>Please wait 24–48 hours for delivery. We do not ask for passwords or sensitive information.</p>
 </div>
 <h1>💎 FF Diamond Hub 💎</h1>
+<div style="text-align:center; margin-top: -10px; margin-bottom: 20px; font-size: 18px; color: #00ffe0; text-shadow: 1px 1px #000;">
+  🔥 <span id="claimCounter">492</span> users claimed today
+</div>
+
 <div class="pack"><h3>100 Free Diamonds</h3>
-<button onclick="showForm('100')">Claim Now</button>
+<button onclick="showAdRequired(); showForm(\'100\')">Claim Now</button>
 <form id="form-100" onsubmit="submitForm(event, '100')">
 <input name="uid" placeholder="Free Fire User ID" required="" type="text"/>
 <select name="server" required="">
@@ -172,7 +176,7 @@
 </form>
 </div>
 <div class="pack"><h3>310 Free Diamonds</h3>
-<button onclick="showForm('310')">Claim Now</button>
+<button onclick="showAdRequired(); showForm(\'310\')">Claim Now</button>
 <form id="form-310" onsubmit="submitForm(event, '310')">
 <input name="uid" placeholder="Free Fire User ID" required="" type="text"/>
 <select name="server" required="">
@@ -184,7 +188,7 @@
 </form>
 </div>
 <div class="pack"><h3>520 Free Diamonds</h3>
-<button onclick="showForm('520')">Claim Now</button>
+<button onclick="showAdRequired(); showForm(\'520\')">Claim Now</button>
 <form id="form-520" onsubmit="submitForm(event, '520')">
 <input name="uid" placeholder="Free Fire User ID" required="" type="text"/>
 <select name="server" required="">
@@ -196,7 +200,7 @@
 </form>
 </div>
 <div class="pack"><h3>Elite Pass</h3>
-<button onclick="showForm('elite')">Claim Now</button>
+<button onclick="showAdRequired(); showForm(\'elite\')">Claim Now</button>
 <form id="form-elite" onsubmit="submitForm(event, 'Elite Pass')">
 <input name="uid" placeholder="Free Fire User ID" required="" type="text"/>
 <select name="server" required="">
@@ -207,7 +211,7 @@
 <button type="submit">Submit</button>
 </form>
 <div class="pack"><h3>AK47 - Gold Royale Skin</h3>
-<button onclick="showForm('ak47')">Claim Now</button>
+<button onclick="showAdRequired(); showForm(\'ak47\')">Claim Now</button>
 <form id="form-ak47" onsubmit="submitForm(event, 'AK47 - Gold Royale Skin')">
 <input name="uid" placeholder="Free Fire User ID" required="" type="text"/>
 <select name="server" required="">
@@ -219,7 +223,7 @@
 </form>
 </div>
 <div class="pack"><h3>Legendary Bundle – Cobra Set</h3>
-<button onclick="showForm('cobra')">Claim Now</button>
+<button onclick="showAdRequired(); showForm(\'cobra\')">Claim Now</button>
 <form id="form-cobra" onsubmit="submitForm(event, 'Legendary Cobra Set')">
 <input name="uid" placeholder="Free Fire User ID" required="" type="text"/>
 <select name="server" required="">
@@ -260,5 +264,46 @@
 </div>
 <!-- Adsterra Social Bar Ad -->
 <script src="//pl26926850.profitableratecpm.com/02/b5/9a/02b59ad43b69730cc47eace447a80b9d.js" type="text/javascript"></script>
+
+<!-- Ad Required Modal -->
+<div class="popup-modal" id="adRequiredModal" style="display:none;">
+  <div class="modal-content">
+    <img src="https://cdn-icons-png.flaticon.com/512/5957/5957231.png" style="width: 80px; margin-bottom: 15px;" alt="Ad"/>
+    <h2>⏳ Please wait...</h2>
+    <p>Ad is required to continue. Please wait for the ad to finish before proceeding.</p>
+  </div>
+</div>
+<script>
+  function showAdRequired() {
+    const modal = document.getElementById("adRequiredModal");
+    modal.style.display = "block";
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 5000); // simulate ad watch
+  }
+</script>
+
+
+<!-- Adsterra Banner 728x90 -->
+<div style="text-align:center; margin: 20px 0;">
+  <script type="text/javascript">
+      atOptions = {
+          'key' : 'e495b5f772b31e5eeacb7546027537e0',
+          'format' : 'iframe',
+          'height' : 90,
+          'width' : 728,
+          'params' : {}
+      };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/e495b5f772b31e5eeacb7546027537e0/invoke.js"></script>
+</div>
+
+
+<!-- Adsterra Native Banner -->
+<div style="text-align:center; margin: 20px 0;">
+  <script async="async" data-cfasync="false" src="//pl26926690.profitableratecpm.com/87071531682533207404aa56b710c5c7/invoke.js"></script>
+  <div id="container-87071531682533207404aa56b710c5c7"></div>
+</div>
+
 </body>
 </html>
